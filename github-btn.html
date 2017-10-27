@@ -24,8 +24,8 @@ var params = function () {
 	return vars;
 }()
 
-var user = params.user,
-	repo = params.repo,
+var user = encodeURIComponent(params.user),
+	repo = encodeURIComponent(params.repo),
 	type = params.type,
 	count = params.count,
 	size = params.size,
